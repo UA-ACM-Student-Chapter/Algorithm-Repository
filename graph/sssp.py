@@ -39,4 +39,18 @@ graph = [
 
 print bellman_ford(graph, 0)
 
-    
+graph2 = [
+    # S
+    [ 0, 6, 7, inf, inf],
+    # A
+    [ inf, 0, 8, 5, -4],
+    # B
+    [ inf, inf, 0, -3, 9],
+    # C
+    [ inf, -2, inf, 0, inf],
+    # D
+    [ 8, inf, inf, 7, 0]
+]
+
+print bellman_ford(graph2, 0)
+
