@@ -12,8 +12,7 @@ def relax(u, v, w):
         v.pi = u
 
 def init_ss(G, s):
-    for vertex 
-
+    pass
 def extend_sp(l, w):
     n = len(l)
     lp = [[float('inf') for x in range(n)] for y in range(n)]
@@ -60,6 +59,17 @@ w = [
     [inf, 5, 10, inf, inf, 0]
 ]
 
+w2 = [
+    [ 0, 5, inf, inf, 9, inf, inf, 8],
+    [ inf, 0, 12, 13, inf, inf, inf, 4],
+    [ inf, inf, 0, 3, inf, inf, 11, inf],
+    [ inf, inf, inf, 0, inf, inf, 9, inf],
+    [ inf, inf, inf, inf, 0, 4, 20, 5],
+    [ inf, inf, 1, inf, inf, 0, inf, inf],
+    [ inf, inf, inf, inf, inf, inf, 0, inf],
+    [ inf, inf, 7, inf, inf, 6, inf, 0]
+]
+
 print "SLOWER"
 print "============="
 print slow_apsp(w)
@@ -67,5 +77,5 @@ print slow_apsp(w)
 print "FASTER"
 print "============="
 print faster_apsp(w)
-
+print faster_apsp(w2)
 
